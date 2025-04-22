@@ -1,6 +1,6 @@
 import { Appeal } from "@/app/types/appeal";
 
-const BASE_URL = "http://localhost:3001/appeals";
+const BASE_URL = "https://json-server-eufh.onrender.com/appeals";
 
 export const getAppeals = async (): Promise<Appeal[]> => {
   const res = await fetch(`${BASE_URL}`);
