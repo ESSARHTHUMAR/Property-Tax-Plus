@@ -22,7 +22,7 @@ export default function EditAppealPage() {
   }, [id]);
 
   // Edit the appeal
-  const handleSubmit = async (data: any) => {
+  const handleSubmit = async (data: Appeal) => {
     const now = new Date().toISOString();
     if (appeal) {
       await updateAppeal(String(appeal.id), {

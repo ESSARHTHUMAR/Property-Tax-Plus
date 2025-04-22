@@ -28,7 +28,10 @@ export default async function AppealsPage() {
         <AppealTable data={data} />
       </div>
     );
-  } catch (error: any) {
-    return <ErrorBoundary error={error} />;
+  } catch (error: unknown) {
+    if (error instanceof Error) {
+      return <ErrorBoundary error={error} />;
+    }
+    return <ErrorBoundary error={new Error(String(error))} />;
   }
 }

@@ -3,12 +3,13 @@
 import { useRouter } from "next/navigation";
 import { createAppeal } from "@/lib/api";
 import AppealForm from "@/app/components/appeal/AppealForm";
+import { Appeal } from "@/app/types/appeal";
 
 export default function CreateAppealPage() {
   const router = useRouter();
 
   // Create the appeal
-  const handleSubmit = async (data: any) => {
+  const handleSubmit = async (data: Appeal) => {
     try {
       const now = new Date().toISOString();
       await createAppeal({ ...data, createdAt: now, updatedAt: now });

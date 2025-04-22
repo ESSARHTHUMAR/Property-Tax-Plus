@@ -1,5 +1,5 @@
 export type Appeal = {
-  id: number;
+  id?: number;
   taxYear: number;
   company: string;
   state: string;
@@ -9,6 +9,6 @@ export type Appeal = {
   status: "Sent" | "Not sent";
   appealDate: string;
   appealBy: string;
-  createdAt: string;
-  updatedAt: string
+  createdAt?: string;
+  updatedAt?: string
 };

@@ -13,7 +13,7 @@ export default function UnderDevelopment() {
         Page Under Development
       </h1>
       <p className="text-gray-600 text-sm sm:text-base max-w-md">
-        We're working hard to bring this page to life. Hang tight, it’ll be ready soon!
+        We&apos;re working hard to bring this page to life. Hang tight, it&rsquo;ll be ready soon!
       </p>
     </div>
   );
