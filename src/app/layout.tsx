@@ -8,8 +8,8 @@ import { Providers } from "./redux/provider";
 
 const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
-  title: "Next App assignment",
-  description: "Datagain Front end developer",
+  title: "Property Tax Plus",
+  description: "Property tax plus",
 };
 
 export default function RootLayout({

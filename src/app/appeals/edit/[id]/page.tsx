@@ -21,6 +21,7 @@ export default function EditAppealPage() {
     fetchAppeal();
   }, [id]);
 
+  // Edit the appeal
   const handleSubmit = async (data: any) => {
     const now = new Date().toISOString();
     if (appeal) {

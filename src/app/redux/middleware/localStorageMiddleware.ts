@@ -1,5 +1,6 @@
 import { Middleware } from "@reduxjs/toolkit";
 
+// To persist the calendar data
 export const localStorageMiddleware: Middleware = (store) => (next) => (action) => {
   const result = next(action);
   const state = store.getState();

@@ -23,7 +23,7 @@ export default function AppealForm({
 
   const handleSubmitWithLoading = async (data: FormData) => {
     setLoading(true);
-    await onSubmit(data); // make sure this is awaited inside `create/page.tsx`
+    await onSubmit(data);
     setLoading(false);
   };
 
@@ -35,6 +35,9 @@ export default function AppealForm({
     resolver: zodResolver(appealSchema),
     defaultValues,
   });
+
+  // If user is editing the appeal, Fields will be populated with existing data
+  // If user is creating the appeal, All the fields will be blank
 
   return (
     <form

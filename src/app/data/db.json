@@ -30,7 +30,7 @@
     },
     {
       "taxYear": 1998,
-      "company": "JAC Corporation",
+      "company": "JAC Corporation LTD.",
       "state": "CA",
       "assessor": "Ace",
       "accountNumber": 4854854569,
@@ -39,7 +39,7 @@
       "appealDate": "2025-04-03",
       "appealBy": "Jane Smith",
       "createdAt": "2025-04-21T16:44:08.971Z",
-      "updatedAt": "2025-04-21T16:44:43.967Z",
+      "updatedAt": "2025-04-22T05:22:57.320Z",
       "id": "4c5d"
     },
     {

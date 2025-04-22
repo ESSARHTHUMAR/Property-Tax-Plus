@@ -7,6 +7,7 @@ import AppealForm from "@/app/components/appeal/AppealForm";
 export default function CreateAppealPage() {
   const router = useRouter();
 
+  // Create the appeal
   const handleSubmit = async (data: any) => {
     try {
       const now = new Date().toISOString();
