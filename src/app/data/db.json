@@ -99,20 +99,6 @@
       "updatedAt": "2025-04-21T19:54:10.021Z"
     },
     {
-      "id": "99e8",
-      "taxYear": 2008,
-      "company": "FFD",
-      "state": "CA",
-      "assessor": "QA",
-      "accountNumber": 4751256325,
-      "deadline": "2025-05-10",
-      "status": "Not sent",
-      "appealDate": "2025-03-30",
-      "appealBy": "RDF",
-      "createdAt": "2025-04-21T19:58:59.651Z",
-      "updatedAt": "2025-04-21T19:58:59.651Z"
-    },
-    {
       "id": "51e7",
       "taxYear": 2004,
       "company": "GD",

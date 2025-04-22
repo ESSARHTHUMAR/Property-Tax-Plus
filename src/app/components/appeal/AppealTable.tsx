@@ -20,7 +20,8 @@ export default function AppealTable({ data }: { data: Appeal[] }) {
   const itemsPerPage = 10;
   const paginatedAppeals = data.slice((page - 1) * itemsPerPage, page * itemsPerPage);
 
-  const handleDelete = async (id: number) => {
+  const handleDelete = async (id?: number) => {
+    if (!id) return;
     await deleteAppeal(id.toString());
     router.refresh();
   };
@@ -52,7 +53,7 @@ export default function AppealTable({ data }: { data: Appeal[] }) {
         </thead>
         <tbody>
           {/* Table data */}
-          {paginatedAppeals.map((appeal) => (
+          {paginatedAppeals.map((appeal: Appeal) => (
             <tr key={appeal.id} className="border-b border-[#F6F7F8]">
               <td className="p-4 text-[#2D2E34] text-sm font-medium">
                 {appeal.taxYear}
