@@ -30,6 +30,7 @@ export default function EditAppealPage() {
         createdAt: appeal.createdAt,
         updatedAt: now,
       });
+      router.refresh();
       router.push("/appeals");
     }
   };

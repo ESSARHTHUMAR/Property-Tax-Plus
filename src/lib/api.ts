@@ -3,7 +3,9 @@ import { Appeal } from "@/app/types/appeal";
 const BASE_URL = "https://json-server-eufh.onrender.com/appeals";
 
 export const getAppeals = async (): Promise<Appeal[]> => {
-  const res = await fetch(`${BASE_URL}`);
+  const res = await fetch(`${BASE_URL}`, {
+    cache: 'no-store'
+  });
   if (!res.ok) throw new Error("Failed to fetch appeals");
   return res.json();
 };
@@ -15,7 +17,7 @@ export const getAppealById = async (id: string): Promise<Appeal> => {
 };
 
 export const createAppeal = async (data: Omit<Appeal, 'id'>): Promise<Appeal> => {
-  const res = await fetch(BASE_URL, {
+  const res = await fetch(`${BASE_URL}`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(data),

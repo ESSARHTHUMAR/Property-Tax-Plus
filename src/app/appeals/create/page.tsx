@@ -13,6 +13,7 @@ export default function CreateAppealPage() {
     try {
       const now = new Date().toISOString();
       await createAppeal({ ...data, createdAt: now, updatedAt: now });
+      router.refresh();
       router.push("/appeals");
     } catch (error) {
       console.error("Error saving appeal:", error);

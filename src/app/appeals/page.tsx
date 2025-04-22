@@ -1,3 +1,4 @@
+
 import Link from "next/link";
 import { getAppeals } from "@/lib/api";
 import AppealTable from "../components/appeal/AppealTable";
