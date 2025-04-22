@@ -8,13 +8,13 @@ export const getAppeals = async (): Promise<Appeal[]> => {
   return res.json();
 };
 
-export const getAppealById = async (id: string): Promise<Appeal[]> => {
+export const getAppealById = async (id: string): Promise<Appeal> => {
   const res = await fetch(`${BASE_URL}/${id}`);
   if (!res.ok) throw new Error("Appeal not found");
   return res.json();
 };
 
-export const createAppeal = async (data: Omit<Appeal, 'id'>): Promise<Appeal[]> => {
+export const createAppeal = async (data: Omit<Appeal, 'id'>): Promise<Appeal> => {
   const res = await fetch(BASE_URL, {
     method: "POST",
     headers: { "Content-Type": "application/json" },

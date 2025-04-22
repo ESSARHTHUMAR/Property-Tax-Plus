@@ -29,18 +29,18 @@
       "id": "07ab"
     },
     {
-      "id": "8745",
       "taxYear": 2015,
       "company": "Snitch",
       "state": "CA",
       "assessor": "Visahl",
       "accountNumber": 487547152,
       "deadline": "2025-05-08",
-      "status": "Not sent",
+      "status": "Sent",
       "appealDate": "2025-04-02",
       "appealBy": "QA",
       "createdAt": "2025-04-21T16:48:30.491Z",
-      "updatedAt": "2025-04-21T16:48:30.491Z"
+      "updatedAt": "2025-04-22T06:23:07.535Z",
+      "id": "8745"
     },
     {
       "id": "e4d9",
